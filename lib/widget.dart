@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 // import 'package:healthtrackerandcalculator/Loginpage.dart';
 
@@ -33,7 +35,16 @@ Widget buildcontainer(BuildContext context) {
             ],
           ),
         ),
-        child: InkWell(),
+        child: InkWell(
+          child: Column(
+            children: [
+              Text(
+                'Body Pains',
+                style: TextStyle(fontSize: 20, color: Colors.white, height: 5),
+              )
+            ],
+          ),
+        ),
       ),
       SizedBox(
         width: 30,
@@ -59,6 +70,18 @@ Widget buildcontainer(BuildContext context) {
         ),
         child: InkWell(
           onTap: () {},
+          child: Column(
+            children: [
+              Text(
+                'Fever',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'Roboto',
+                    color: Colors.white,
+                    height: 5),
+              )
+            ],
+          ),
         ),
       ),
     ],
@@ -96,9 +119,10 @@ Widget buildbox(BuildContext context) {
           child: Column(
             children: [
               Text(
-                '',
+                'Dry Cough',
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 20,
+                  height: 5,
                   color: Colors.white,
                   fontFamily: 'Roboto',
                 ),
@@ -138,7 +162,12 @@ Widget buildbox(BuildContext context) {
         child: InkWell(
           onTap: () {},
           child: Column(
-            children: [],
+            children: [
+              Text(
+                'Tiredness',
+                style: TextStyle(color: Colors.white, height: 5, fontSize: 20),
+              )
+            ],
           ),
         ),
       ),
@@ -177,6 +206,10 @@ Widget buildbox1(BuildContext context) {
           onTap: () {},
           child: Column(
             children: [
+              Text(
+                'Cold',
+                style: TextStyle(fontSize: 20, height: 5, color: Colors.white),
+              )
               // Image.asset(
               //   'images/doctorconsultation.jpg',
               //   height: 100,
@@ -217,7 +250,12 @@ Widget buildbox1(BuildContext context) {
         child: InkWell(
           onTap: () {},
           child: Column(
-            children: [],
+            children: [
+              Text(
+                'No Taste',
+                style: TextStyle(fontSize: 20, color: Colors.white, height: 5),
+              )
+            ],
           ),
         ),
       ),
